@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title col-sm-4>Lucky Sevens</title>
+    <title>Lucky Sevens</title>
     <script src="L7logic.js"></script>
-	<link href="L7style.css" rel="stylesheet" type="text/css" >
-	
-	
+	<link href="L7style.css" rel="stylesheet" type="text/css" >	
 </head>
-
 <body>
     <h1>Lucky Sevens</h1>
     <form name="luckySevens" onsubmit="return playGame()" onreset="resetForm();" class="form-inline"><br />
         <div>
-            <label for="betAmount">Starting Bet:</label>
-            <input type="number" id="betAmount" value="$0.00">
+            <label for="betAmount">Starting Bet:</label><!-- Bet amount from docform on .js -->
+            <input type="number" id="betAmount" value="$0.00"><!-- starting bet amount -->
         </div>
         <br>
-        <button type="submit" id="submitButton" class="btn btn-default">Play Game!</button>
+        <button type="submit" id="submitButton" class="btn btn-default">Play</button><!-- play button -->
   <hr>
 <h1> Results</h1>
         <div class="game-totals">
            <table>
-                
+                <!-- Pull all the data from JS -->
                     <tr>
                         <td>Starting Bet</td>
                         <td id="startingBet"></td>
