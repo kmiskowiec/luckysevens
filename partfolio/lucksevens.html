@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title col-sm-4>Lucky Sevens</title>
+    <script src="L7logic.js"></script>
+	<link href="L7style.css" rel="stylesheet" type="text/css" >
+	
+	
+</head>
+
+<body>
+    <h1>Lucky Sevens</h1>
+    <form name="luckySevens" onsubmit="return playGame()" onreset="resetForm();" class="form-inline"><br />
+        <div>
+            <label for="betAmount">Starting Bet:</label>
+            <input type="number" id="betAmount" value="$0.00">
+        </div>
+        <br>
+        <button type="submit" id="submitButton" class="btn btn-default">Play Game!</button>
+  <hr>
+<h1> Results</h1>
+        <div class="game-totals">
+           <table>
+                
+                    <tr>
+                        <td>Starting Bet</td>
+                        <td id="startingBet"></td>
+                    </tr>            
+                    <tr>
+                        <td>Total Rolls Before Going Broke</td>
+                        <td id="Total-Rolls-Before-Broke"></td>
+                    </tr>
+                    <tr>
+                        <td>Highest Amount Won</td>
+                        <td id="highest-amount-won"></td>
+                    </tr>
+                    <tr>
+                        <td>Roll count at highest amount won</td>
+                        <td id="Roll-Count-Highest"></td>
+                    </tr>            
+            </table>
+        </div>
+    </form>
+</body>
+
+</html>
